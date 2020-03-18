@@ -3,7 +3,7 @@
 }
 
 .global {
-  box-shadow:  0px 12px 19px #222222;
+  box-shadow: 0px 12px 19px #222222;
   margin-top: 100px;
   margin-bottom: 100px;
 }
@@ -56,7 +56,6 @@ section {
   color: #fff;
 }
 .menu {
-  /* width: 100%; */
   display: flex;
 }
 .Home {
@@ -64,6 +63,8 @@ section {
 }
 .menu ul {
   display: flex;
+  height: 65px;
+  align-items: center;
 }
 
 .menu ul li {
@@ -72,17 +73,28 @@ section {
   margin-right: 25px;
 
   background-color: rgba(5, 178, 200, 0.46);
-  padding: 15px;
+
   border-left: 5px solid #fff;
   font-weight: bold;
+
+  transition-property: top;
 }
-.menu ul a {
+.menu li a {
   color: #fff;
   display: block;
+  text-decoration: none;
+  padding: 20px;
 }
-/* ul a:hover {  tentando fazer uma action baseado no :hover
-    margin-bottom: 5px;
-} */
+.menu ul li:hover {
+  position: relative;
+  top: -3px;
+  box-shadow: 0px 1px 10px 0px #222222;
+}
+.button1:hover, .button2:hover {
+  position: relative;
+  top: -3px;
+  box-shadow: 0px 1px 10px 0px #222222;
+}
 
 nav {
   flex: 2;
@@ -136,7 +148,6 @@ nav {
 .buttons {
   margin-top: 20px;
   display: flex;
-  /* padding: 20px; */
   justify-content: space-evenly;
   width: 350px;
 }
